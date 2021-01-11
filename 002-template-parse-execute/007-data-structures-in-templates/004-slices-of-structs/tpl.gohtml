@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+</head>
+<body>
+{{$wisdom := .}}
+{{range $wisdom}}
+<h1>First Name : {{.FirstName}}</h1>
+<h1>Last Name : {{.LastName}}</h1>
+{{end}}
+</body>
+</html>

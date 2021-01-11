@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+</head>
+<body>
+{{$names := .}}
+{{range $idx, $elm := $names}}
+    <h1>{{$idx}} - {{$elm}}</h1>
+{{end}}
+</body>
+</html>
