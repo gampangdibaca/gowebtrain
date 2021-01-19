@@ -1,0 +1,10 @@
+just for example to read file with go web
+just
+want
+to
+make
+it
+more
+than
+one
+line
