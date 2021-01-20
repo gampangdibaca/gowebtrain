@@ -17,7 +17,7 @@ func foo(w http.ResponseWriter, req *http.Request) {
 	c, err := req.Cookie("my-cookie")
 	if err == http.ErrNoCookie {
 		c = &http.Cookie{
-			Name: "my-cookie",
+			Name:  "my-cookie",
 			Value: "0",
 		}
 	}
