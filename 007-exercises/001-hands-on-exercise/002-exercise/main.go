@@ -29,6 +29,7 @@ func me(w http.ResponseWriter, req *http.Request) {
 	}
 }
 
+
 func init() {
 	tpl = template.Must(template.ParseGlob("templates/*.gohtml"))
 }
@@ -37,6 +38,5 @@ func main() {
 	http.HandleFunc("/me/", me)
 	http.HandleFunc("/dog/", dog)
 	http.HandleFunc("/", basic)
-
 	http.ListenAndServe(":8080", nil)
 }
